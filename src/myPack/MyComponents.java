@@ -4,19 +4,24 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.net.URI;
+import javax.swing.ImageIcon;
 
 public class MyComponents extends JFrame {
     private JLabel textOne;
     private JButton buttonProgramming, buttonRest;
+    private JLabel gifAdd;
     public MyComponents(){
         super("AOSAR");
         setLayout(new FlowLayout());
         textOne = new JLabel("Choose:");
         buttonProgramming = new JButton("programming");
         buttonRest = new JButton("rest");
+        ImageIcon gitIcon = new ImageIcon("src/myPack/gif.gif");
+        gifAdd = new JLabel(gitIcon);
         add(textOne);
         add(buttonProgramming);
         add(buttonRest);
+        add(gifAdd);
         buttonProgramming.addActionListener(e -> {
             String ideRun = "F:/IntelliJ IDEA Community Edition 2022.3.2/bin/idea64.exe";
             String ideProjectsFile = "C://Users//Марк//IdeaProjects";
