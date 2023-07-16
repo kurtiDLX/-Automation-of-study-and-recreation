@@ -19,6 +19,8 @@ public class MyComponents extends JFrame {
         textOne = new JLabel("Choose:");
         buttonProgramming = new JButton("programming");
         buttonRest = new JButton("rest");
+        buttonProgramming.setBackground(Color.PINK);
+        buttonRest.setBackground(Color.PINK);
         ImageIcon gitIcon = new ImageIcon("src/myPack/gif.gif");
         gifAdd = new JLabel(gitIcon);
         add(textOne);
